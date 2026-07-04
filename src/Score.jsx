@@ -18,7 +18,7 @@ function Score() {
         Cricket Score
       </h2>
 
-      <p className='    hidden text-gray-500 mb-6'>
+      <p className='    hidden text-gray-500 mb-6'> 
         State Example Using <span className='font-bold'>useState()</span>
       </p>
 
@@ -26,6 +26,10 @@ function Score() {
 
       <button className='bg-blue-600 px-5 py-4 text-white text-lg font-semibold rounded-xl hover:bg-blue-700 shadow-[0_10px_50px_rgba(0,0,0,0.25)] ' onClick={()=>{setScore(score +1)}}>Increment </button>
       
+
+      <button className='bg-green-600 px-5 py-4 text-white text-lg font-semibold rounded-xl hover:bg-blue-700 shadow-[0_10px_50px_rgba(0,0,0,0.25)] ' onClick={()=>{setScore(score > 0 ? score-1 :0)}}>Decrement </button>
+
+      <button className='bg-blue-600 px-5 py-4 text-white text-lg font-semibold rounded-xl hover:bg-blue-700 shadow-[0_10px_50px_rgba(0,0,0,0.25)] ' onClick={()=>{setScore(0)}}>Reset</button>
       
     </div>
     </div>
